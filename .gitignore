@@ -7,3 +7,11 @@ tsconfig.tsbuildinfo
 # phase execution outputs
 phases/**/phase*-output.json
 phases/**/step*-output.json
+
+# 환경 변수 (API 키 등 비밀 정보)
+.env
+.env.local
+.env*.local
+
+# 원본 하네스 저장소(.git만 남음) — 추적하지 않음
+harness_framework/
