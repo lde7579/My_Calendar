@@ -16,7 +16,7 @@
       "status": "completed",
       "started_at": "2026-11-09T23:00:39+0900",
       "summary": "src/types/index.ts(Channel, Video, ChannelSummary, ChannelInput, ChannelResponse, RecommendResponse, ErrorResponse 타입 + VideoSchema, ChannelSummarySchema, RecommendRequestSchema, RecommendationSchema, RecommendationResultSchema(개수 제약 없음) Zod 스키마)와 src/lib/analyze.ts(parseChannelInput, summarizeChannel 순수 함수: 주력 카테고리·태그/제목 키워드 TOP10·평균 조회수·TOP3 영상·recentTitles) 작성. 테스트: tests/lib/analyze.test.ts, tests/types.test.ts (24개 통과), tests/smoke.test.ts 삭제",
-      "completed_at": "2026-11-09T23:03:00+0900"
+      "completed_at": "2026-11-09T23:02:35+0900"
     },
     {
       "step": 2,
