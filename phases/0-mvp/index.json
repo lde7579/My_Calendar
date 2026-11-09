@@ -48,7 +48,7 @@
       "status": "completed",
       "started_at": "2026-11-09T23:08:20+0900",
       "summary": "src/app/page.tsx(\"use client\", useState만: channelState/recommendState idle|loading|success|error + useRef 요청 번호로 이전 추천 응답 무시): 폼 submit→POST /api/channel→요약·인기 급상승 즉시 렌더→자동 POST /api/recommend {summary,trending}, 로딩 문구 \"추천 생성 중… 보통 20~30초\", 실패 시 요약 유지+[추천 다시 시도], [다른 추천 받기]는 2단계만 재호출, 입력 기본값 NEXT_PUBLIC_DEFAULT_CHANNEL. 컴포넌트: src/components/{ChannelSummary(구독자/평균 조회수/분석 영상 수·키워드 칩·TOP3), RecommendationList(복사→1.5초 \"복사됨\", 참고 영상 YouTube 새 탭 링크), TrendingList(fallback 안내+썸네일 w-24 표)}.tsx. src/lib/format.ts: formatCount(1만↑ \"12.3만\"/1억↑ \"1.2억\", 내림), categoryName(기본 카테고리 14개 한국어, 없으면 \"카테고리 {id}\"). globals.css fade-in 0.3s. 테스트: tests/lib/format.test.ts(6개, 전체 76개 통과), build·lint 통과",
-      "completed_at": "2026-11-09T23:10:25+0900"
+      "completed_at": "2026-11-09T23:10:47+0900"
     }
   ],
   "created_at": "2026-11-09T22:58:27+0900"
