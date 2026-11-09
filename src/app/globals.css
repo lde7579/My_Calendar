@@ -3,3 +3,17 @@
 body {
   background: #0a0a0a;
 }
+
+/* 결과 영역 fade-in (UI_GUIDE에서 허용한 유일한 애니메이션) */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fade-in 0.3s ease-out;
+}
