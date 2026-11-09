@@ -37,7 +37,9 @@
     {
       "step": 4,
       "name": "api-routes",
-      "status": "pending"
+      "status": "completed",
+      "started_at": "2026-11-09T23:06:34+0900",
+      "summary": "POST /api/channel(src/app/api/channel/route.ts): 본문 {channel: string} → 200 ChannelResponse {summary, trending, trendingFallback} (getChannel→getRecentVideos→summarizeChannel→getTrendingVideos(topCategoryId)); 키 없음 500, JSON/타입/parseChannelInput 실패 400, 채널 없음 404, 영상 0개 422, YouTubeError·기타 502(\"YouTube 데이터를 가져오지 못했어요\", 기타는 console.error). POST /api/recommend(src/app/api/recommend/route.ts): 본문 RecommendRequestSchema {summary, trending} → 200 RecommendResponse(recommendNext); 키 없음 500, 검증 실패 400 \"요청 형식이 올바르지 않아요\", RecommendError 502(message 그대로), 기타 502 \"추천을 생성하지 못했어요\"+console.error. 에러 형식 {error}. 테스트: tests/api/channel.test.ts(13개), tests/api/recommend.test.ts(7개), vi.mock+importOriginal·vi.stubEnv, 전체 70개 통과"
     },
     {
       "step": 5,
