@@ -29,7 +29,10 @@
     {
       "step": 3,
       "name": "claude-service",
-      "status": "pending"
+      "status": "completed",
+      "started_at": "2026-11-09T23:04:40+0900",
+      "summary": "src/services/claude.ts: MODEL(\"claude-opus-5-5\"), RecommendError(message, {cause}), recommendNext(summary, trending, client=new Anthropic()): Promise<RecommendationResult> — messages.parse(max_tokens 16000, SYSTEM_PROMPT, effort medium, zodOutputFormat(RecommendationResultSchema)), 금지 파라미터 미사용. 처리: refusal→\"추천을 생성할 수 없는 요청이에요\", max_tokens/parsed_output null→\"추천 결과를 읽지 못했어요\", Anthropic.APIError→\"추천 서버 호출에 실패했어요\"(cause 보존, 그 외 예외는 그대로), 후처리: 5개 초과 시 앞 5개, trending에 없는 referenceVideoIds 제거, 0개→\"추천 결과가 비어 있어요\". 내부 buildUserPrompt(채널 요약+trending id/제목/채널/조회수/태그 앞5). 테스트: tests/services/claude.test.ts(10개, 가짜 client 주입, 전체 50개 통과)",
+      "completed_at": "2026-11-09T23:06:14+0900"
     },
     {
       "step": 4,
